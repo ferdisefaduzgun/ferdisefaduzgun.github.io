@@ -1,0 +1,242 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --background-c: #081b29;
+    --text: #ededed;
+    --hover-nav: #00abf0;
+}
+
+body{
+    background-color: #081b29;
+    color: var(--text);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background-color: transparent;
+    border-bottom: 1px solid #00abf0;
+}
+
+.header .logo{
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navbar a{
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.header .navbar a:hover, .header .navbar a.active{
+    color: var(--hover-nav);
+}
+
+.header .navbar a:hover{
+    transform: scale(1.3);
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 20px 5%;
+    }
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-sec{
+    max-width: 600px;
+}
+
+.home-sec h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-sec h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--hover-nav);
+    line-height: 1.4;
+}
+
+.home-sec p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 40px;
+}
+
+.home-sec .btn1{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sec .btn1 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-nav);
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    color: #081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.home-sec .btn1 a:nth-of-type(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+.home-sec .btn1 a{
+    position: relative;
+    overflow: hidden;
+}
+
+.home-sec .btn1 a:hover{
+    color: #081b29;
+}
+
+.home-sec .btn1 a:first-child:hover{
+    background-color: #081b29;
+    color: #00abf0;
+}
+
+.home-sec .btn1 a:first-child{
+    transition: all 0.3s ease;
+}
+.home-sec .btn1 a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #00abf0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.home-sec .btn1 a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+        position: absolute;
+        bottom: 60px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+}
+
+.home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid var(--hover-nav);
+        font-size: 20px;
+        color: #00abf0;
+        transition: all 0.5s ease;
+}
+
+.home-sci a:hover{
+        background-color: var(--hover-nav);
+        color: #081b29;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.resim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.resim img{
+    border-radius: 50%;
+    box-shadow: 0 0 45px 8px #00abf0;
+}
+
+@media (max-width: 991px){
+    .home-sec{
+        max-width: 100%;
+    }
+    .home-sec h1{
+        font-size: 40px;
+    }
+    .home-sec h3{
+        font-size: 28px;
+    }
+    .home-sec p{
+        font-size: 16px;
+    }
+    .home-sec .btn1{
+        width: 100%;
+    }
+    .home-sec .btn1 a{
+        width: 130px;
+    }
+    .home-sci{
+        width: 300px;
+    }
+    .resim{
+        width: 50%;
+    }
+}
+
+@media (max-width: 862px){
+    .resim{
+        display: none;
+    }
+}
+
+@media (max-width: 644px){
+    .header .navbar{
+        display: none;
+    }
+}
