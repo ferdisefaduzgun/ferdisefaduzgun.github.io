@@ -15,7 +15,7 @@
 }
 
 body{
-    background-color: #081b29;
+    background-color: white;
     color: var(--text);
 }
 
@@ -31,12 +31,21 @@ body{
     z-index: 1000; 
     background-color: transparent;
     border-bottom: 1px solid #00abf0;
+    height: 70px;
 }
 
 .header .logo{
-    color: var(--text);
+    color: black;
     font-size: 30px;
     font-weight: 600;
+}
+
+@media (max-width: 862px){
+
+}
+
+.header a span{
+    color: #00abf0;
 }
 
 .header .navbar{
@@ -46,11 +55,52 @@ body{
 }
 
 .header .navbar a{
-    color: var(--text);
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 40px;
     transition: all 0.3s ease;
+}
+
+
+.darkmode{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.darkmode input{
+    opacity: 0;
+}
+
+.darkmode span{
+        width: 30px;
+        height: 30px;
+        border: 1px solid purple;
+        display: flex;
+        background-color: white;
+        position: absolute;
+        border-radius: 20px;
+        top: 5px;
+        left: 5px;
+}
+
+.darkmode input:checked + span{
+    left: 45px;
+}
+
+.darkmode:checked{
+    background-color: #00abf0;
+    transition: all 3s;
+}
+
+.darkmodee{
+    background-color: #081b29;
+    color: #ededed;
+    transition: all 3s;
 }
 
 .header .navbar a:hover, .header .navbar a.active{
@@ -82,6 +132,7 @@ body{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    color: black;
 }
 
 .home-sec h3{
@@ -95,6 +146,7 @@ body{
     font-size: 18px;
     font-weight: 500;
     margin: 20px 0 40px;
+    color: black;
 }
 
 .home-sec .btn1{
@@ -233,10 +285,37 @@ body{
     .resim{
         display: none;
     }
+
+
 }
+
+
+
+
+.darkmodeee{
+    color: white !important;
+    transition: all 3s;
+}
+
+@media (max-width: 862px){
+    .darkmode{
+        display: none;
+    }
+}
+
 
 @media (max-width: 644px){
     .header .navbar{
         display: none;
     }
 }
+
+
+@media (max-width: 634px){
+    .darkmode{
+        display: block;
+    }
+}
+
+
+
