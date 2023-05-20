@@ -47,7 +47,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 14%;
+    padding: 0 5%;
     position: fixed;
     top: 0;
     z-index: 999;
