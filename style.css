@@ -414,6 +414,7 @@ html,body{
 .skill{
     width: 80%;
     background-color: lightcoral;
+    border-radius: 20px;
 }
 
 .skill div{
@@ -422,22 +423,23 @@ html,body{
     margin-bottom: 20px;
     padding: 5px;
     font-size: 2rem;
+    border-radius: 20px;
 }
 
 .div2{
-    width: 75% !important;
+    width: 80% !important;
 }
 
 .div3{
-    width: 30% !important;
+    width: 35% !important;
 }
 
 .div4{
-    width: 65% !important;
+    width: 70% !important;
 }
 
 .div5{
-    width: 50% !important;
+    width: 55% !important;
 }
 
 /* right end  */
