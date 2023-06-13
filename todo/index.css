@@ -106,3 +106,17 @@ html,body{
 
 
 /* main css end */
+
+@media (max-width:475px) {
+    .form input{
+        width: 200px;
+    }
+
+    .liste{
+        width: 250px;
+    }
+    
+    .temizle{
+        width: 260px;
+    }
+}
