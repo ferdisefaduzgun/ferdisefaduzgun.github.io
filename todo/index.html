@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>ToDoList</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>To do List 3</title>
 </head>
 <body>
-    <h1 class="todobaslik">Todo List</h1>
 
-    <div class="main-div">
-        <form>
-            <div class="form">
-                <input id="yaz" type="text" placeholder="Bir şeyler yazınız...">
-                <button id="ekle" type="submit">Ekle</button>
-            </div>
-        </form>
+  <!-- header start -->    
+  <header class="header">
+      <h1>My To Do List</h1>
+  </header>
+  <!-- header end -->
 
-        <div class="temizle">
-            <button type="submit" onclick="clearTodos()">Temizle</button>
-        </div>
-
-        <ul class="liste" id="ul-ekle" >
-<!--             <li>
-                <span >Todo Name</span>
-                <button>Sil</button>
-            </li> -->
-        </ul>
+  <!-- search start -->
+ <form>
+    <div class="search">
+        <input type="text" placeholder="Add..." class="todoInput">
+        <button class="addButton" type="submit">
+            <i class="fa-solid fa-plus"></i>
+        </button>
     </div>
+    <!-- search end -->
+  
+    <!-- select start -->
+    <div class="select-main">
+        <select class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Complated</option>
+            <option value="uncompleted">Uncomplated</option>
+        </select>
+    </div>
+ </form>
+  <!-- select end -->
 
-    <script src="index.js"></script>
+  <!-- alt start -->
+  <div class="alt">
+      <ul class="todoList"></ul>
+  </div>
+  <!-- alt end -->
+
+  <!-- alert start  -->
+  <div class="main-alert">
+      <div class="success">Başarıyla eklendi</div>
+      <div class="warning">Input alanı boş geçilemez.</div>
+  </div>
+  <!-- alert end -->
+
+  <script src="index.js"></script>
+  
 </body>
 </html>
