@@ -78,6 +78,7 @@ header h1{
     background-color: white;
     margin-bottom: 10px;
     transition: 0.5s all ease;
+    min-width: 300px;
 }
 
 .checkedButton{
