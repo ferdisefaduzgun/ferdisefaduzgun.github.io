@@ -71,6 +71,8 @@ header h1{
 
 .todo{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
@@ -83,10 +85,10 @@ header h1{
 }
 
 .todo-item{
-    width: 200px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    text-align: center;
     padding: 5px;
 }
 
